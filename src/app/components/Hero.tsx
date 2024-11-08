@@ -57,14 +57,8 @@ const Hero = () => {
           }}
         />
       </div>
-      <h1 className="text-4xl md:text-6xl font-bold mb-4 text-lightText dark:text-darkText">
-        Hello, I'm Areeb
-      </h1>
-      <p className="text-xl md:text-2xl mb-8 text-lightText dark:text-darkText">
-        <span className="text-lightText dark:text-white">I'm a </span>
-        <span className="text-yellow-500">{text}</span>
-        <span className="border-r-2 border-gray-500 animate-blink"></span>
-      </p>
+      <h1 className="text-4xl md:text-6xl font-bold mb-4 text-lightText dark:text-darkText">Hello, I&apos;m Areeb</h1>
+      <p className="text-xl md:text-2xl mb-8 text-lightText dark:text-darkText"> <span className="text-lightText dark:text-white">I&apos;m a </span> <span className="text-yellow-500">{text}</span> <span className="border-r-2 border-gray-500 animate-blink"></span> </p>
 
       <div className="flex space-x-4">
         <Link

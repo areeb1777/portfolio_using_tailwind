@@ -14,7 +14,7 @@ const Header = () => {
 
     const onScroll = () => {
       if (header) {
-        let scrollTop = window.scrollY || document.documentElement.scrollTop;
+        const scrollTop = window.scrollY || document.documentElement.scrollTop;
         if (scrollTop > lastScrollTop) {
           header.style.top = "-80px";
         } else {

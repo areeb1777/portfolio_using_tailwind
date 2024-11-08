@@ -65,9 +65,11 @@ function ContactForm() {
       <h2 className="text-3xl font-bold mb-4 cursor-pointer hover:text-orange-400">
         Contact Me
       </h2>
+
       <p>
-        If you'd like to connect, feel free to reach out via my social media
-        links or send me a message using the form below:
+        {" "}
+        If you&apos;d like to connect, feel free to reach out via my social
+        media links or send me a message using the form below:
       </p>
 
       <form onSubmit={handleSubmit} className="mt-6 space-y-4">
