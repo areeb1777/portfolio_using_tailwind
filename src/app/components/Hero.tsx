@@ -1,20 +1,21 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 const Hero = () => {
   const [text, setText] = useState("");
-  const phrases = [
-    "JavaScript Developer",
-    "Frontend Developer",
-    "Web Developer",
-  ];
   const [index, setIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [delay, setDelay] = useState(100);
+
+  // Wrap `phrases` in useMemo to avoid recreating it on every render
+  const phrases = useMemo(
+    () => ["JavaScript Developer", "Frontend Developer", "Web Developer"],
+    []
+  );
 
   useEffect(() => {
     const handleTyping = () => {
@@ -40,7 +41,7 @@ const Hero = () => {
     const typingTimeout = setTimeout(handleTyping, delay);
 
     return () => clearTimeout(typingTimeout);
-  }, [text, isDeleting]);
+  }, [text, isDeleting, index, delay, phrases]);
 
   return (
     <section className="flex flex-col items-center justify-center min-h-screen p-8 text-center bg-gradient-to-r from-blue-200 via-purple-200 to-pink-200 dark:from-gray-800 dark:via-gray-900 dark:to-black">
@@ -57,8 +58,14 @@ const Hero = () => {
           }}
         />
       </div>
-      <h1 className="text-4xl md:text-6xl font-bold mb-4 text-lightText dark:text-darkText">Hello, I&apos;m Areeb</h1>
-      <p className="text-xl md:text-2xl mb-8 text-lightText dark:text-darkText"> <span className="text-lightText dark:text-white">I&apos;m a </span> <span className="text-yellow-500">{text}</span> <span className="border-r-2 border-gray-500 animate-blink"></span> </p>
+      <h1 className="text-4xl md:text-6xl font-bold mb-4 text-lightText dark:text-darkText">
+        Hello, I&apos;m Areeb
+      </h1>
+      <p className="text-xl md:text-2xl mb-8 text-lightText dark:text-darkText">
+        <span className="text-lightText dark:text-white">I&apos;m a </span>
+        <span className="text-yellow-500">{text}</span>
+        <span className="border-r-2 border-gray-500 animate-blink"></span>
+      </p>
 
       <div className="flex space-x-4">
         <Link
