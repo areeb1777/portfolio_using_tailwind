@@ -4,8 +4,12 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { FaSun, FaMoon, FaBars, FaTimes } from "react-icons/fa";
 
-const Header = () => {
-  const [theme, setTheme] = useState<string>("dark");
+type HeaderProps = {
+  theme: string;
+  toggleTheme: () => void;
+};
+
+const Header: React.FC<HeaderProps> = ({ theme, toggleTheme }) => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
   useEffect(() => {
@@ -29,7 +33,6 @@ const Header = () => {
     const storedTheme = localStorage.getItem("theme");
     if (storedTheme) {
       document.documentElement.classList.add(storedTheme);
-      setTheme(storedTheme);
     } else {
       document.documentElement.classList.add("dark");
     }
@@ -38,20 +41,6 @@ const Header = () => {
       window.removeEventListener("scroll", onScroll);
     };
   }, []);
-
-  const toggleTheme = () => {
-    if (theme === "light") {
-      document.documentElement.classList.remove("light");
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-      setTheme("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-      document.documentElement.classList.add("light");
-      localStorage.setItem("theme", "light");
-      setTheme("light");
-    }
-  };
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
