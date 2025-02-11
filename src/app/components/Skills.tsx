@@ -16,98 +16,126 @@ const Skills = () => {
       </h2>
       <div className="space-y-4">
         {/* Skill Item */}
-        <div className="flex items-center justify-between">
-          <FaHtml5 className="mr-2 text-2xl text-red-500" />
-          <span className="text-lg font-semibold">HTML</span>
-          <div className="w-full bg-gray-300 dark:bg-gray-700 h-2 rounded-full mx-4 overflow-hidden">
-            <div
-              className="bg-blue-500 h-2 rounded-full"
-              style={{ width: "90%" }}
-            ></div>
+        <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-2 w-32">
+            <FaHtml5 className="text-2xl text-red-500" />
+            <span className="text-lg font-semibold">HTML</span>
+          </div>
+          <div className="flex-grow">
+            <div className="w-full bg-gray-300 dark:bg-gray-700 h-2 rounded-full overflow-hidden">
+              <div
+                className="bg-blue-500 h-2 rounded-full"
+                style={{ width: "90%" }}
+              ></div>
+            </div>
           </div>
           <span className="text-sm font-medium text-gray-600 dark:text-gray-300">
             90%
           </span>
         </div>
 
-        <div className="flex items-center justify-between">
-          <FaCss3Alt className="mr-2 text-2xl text-blue-500" />
-          <span className="text-lg font-semibold">CSS</span>
-          <div className="w-full bg-gray-300 dark:bg-gray-700 h-2 rounded-full mx-4 overflow-hidden">
-            <div
-              className="bg-blue-500 h-2 rounded-full"
-              style={{ width: "85%" }}
-            ></div>
+        <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-2 w-32">
+            <FaCss3Alt className="text-2xl text-blue-500" />
+            <span className="text-lg font-semibold">CSS</span>
+          </div>
+          <div className="flex-grow">
+            <div className="w-full bg-gray-300 dark:bg-gray-700 h-2 rounded-full overflow-hidden">
+              <div
+                className="bg-blue-500 h-2 rounded-full"
+                style={{ width: "85%" }}
+              ></div>
+            </div>
           </div>
           <span className="text-sm font-medium text-gray-600 dark:text-gray-300">
             85%
           </span>
         </div>
 
-        <div className="flex items-center justify-between">
-          <IoLogoJavascript className="mr-2 text-4xl text-yellow-400" />
-          <span className="text-lg font-semibold">JavaScript</span>
-          <div className="w-full bg-gray-300 dark:bg-gray-700 h-2 rounded-full mx-4 overflow-hidden">
-            <div
-              className="bg-blue-500 h-2 rounded-full"
-              style={{ width: "75%" }}
-            ></div>
+        <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-2 w-32">
+            <IoLogoJavascript className="text-4xl text-yellow-400" />
+            <span className="text-lg font-semibold">JavaScript</span>
+          </div>
+          <div className="flex-grow">
+            <div className="w-full bg-gray-300 dark:bg-gray-700 h-2 rounded-full overflow-hidden">
+              <div
+                className="bg-blue-500 h-2 rounded-full"
+                style={{ width: "75%" }}
+              ></div>
+            </div>
           </div>
           <span className="text-sm font-medium text-gray-600 dark:text-gray-300">
             75%
           </span>
         </div>
 
-        <div className="flex items-center justify-between">
-          <SiTypescript className="mr-2 text-4xl text-blue-500" />
-          <span className="text-lg font-semibold">TypeScript</span>
-          <div className="w-full bg-gray-300 dark:bg-gray-700 h-2 rounded-full mx-4 overflow-hidden">
-            <div
-              className="bg-blue-500 h-2 rounded-full"
-              style={{ width: "75%" }}
-            ></div>
+        <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-2 w-32">
+            <SiTypescript className="text-4xl text-blue-500" />
+            <span className="text-lg font-semibold">TypeScript</span>
+          </div>
+          <div className="flex-grow">
+            <div className="w-full bg-gray-300 dark:bg-gray-700 h-2 rounded-full overflow-hidden">
+              <div
+                className="bg-blue-500 h-2 rounded-full"
+                style={{ width: "75%" }}
+              ></div>
+            </div>
           </div>
           <span className="text-sm font-medium text-gray-600 dark:text-gray-300">
             75%
           </span>
         </div>
 
-        <div className="flex items-center justify-between">
-          <FaReact className="mr-2 text-4xl text-blue-400" />
-          <span className="text-lg font-semibold">React</span>
-          <div className="w-full bg-gray-300 dark:bg-gray-700 h-2 rounded-full mx-4 overflow-hidden">
-            <div
-              className="bg-blue-500 h-2 rounded-full"
-              style={{ width: "80%" }}
-            ></div>
+        <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-2 w-32">
+            <FaReact className="text-4xl text-blue-400" />
+            <span className="text-lg font-semibold">React</span>
+          </div>
+          <div className="flex-grow">
+            <div className="w-full bg-gray-300 dark:bg-gray-700 h-2 rounded-full overflow-hidden">
+              <div
+                className="bg-blue-500 h-2 rounded-full"
+                style={{ width: "80%" }}
+              ></div>
+            </div>
           </div>
           <span className="text-sm font-medium text-gray-600 dark:text-gray-300">
             80%
           </span>
         </div>
 
-        <div className="flex items-center justify-between">
-          <RiTailwindCssFill className="mr-2 text-4xl text-blue-400" />
-          <span className="text-lg font-semibold">Tailwind</span>
-          <div className="w-full bg-gray-300 dark:bg-gray-700 h-2 rounded-full mx-4 overflow-hidden">
-            <div
-              className="bg-blue-500 h-2 rounded-full"
-              style={{ width: "80%" }}
-            ></div>
+        <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-2 w-32">
+            <RiTailwindCssFill className="text-4xl text-blue-400" />
+            <span className="text-lg font-semibold">Tailwind</span>
+          </div>
+          <div className="flex-grow">
+            <div className="w-full bg-gray-300 dark:bg-gray-700 h-2 rounded-full overflow-hidden">
+              <div
+                className="bg-blue-500 h-2 rounded-full"
+                style={{ width: "80%" }}
+              ></div>
+            </div>
           </div>
           <span className="text-sm font-medium text-gray-600 dark:text-gray-300">
             80%
           </span>
         </div>
 
-        <div className="flex items-center justify-between">
-          <RiNextjsFill className="mr-2 text-4xl text-white bg-black" />
-          <span className="text-lg font-semibold">Next.js</span>
-          <div className="w-full bg-gray-300 dark:bg-gray-700 h-2 rounded-full mx-4 overflow-hidden">
-            <div
-              className="bg-blue-500 h-2 rounded-full"
-              style={{ width: "75%" }}
-            ></div>
+        <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-2 w-32">
+            <RiNextjsFill className="text-4xl text-white bg-black" />
+            <span className="text-lg font-semibold">Next.js</span>
+          </div>
+          <div className="flex-grow">
+            <div className="w-full bg-gray-300 dark:bg-gray-700 h-2 rounded-full overflow-hidden">
+              <div
+                className="bg-blue-500 h-2 rounded-full"
+                style={{ width: "75%" }}
+              ></div>
+            </div>
           </div>
           <span className="text-sm font-medium text-gray-600 dark:text-gray-300">
             75%
